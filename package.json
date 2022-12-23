@@ -1,0 +1,19 @@
+{
+  "name": "yalls",
+  "version": "0.1.0",
+  "description": "Yet Another Logging Library Specifically for y'all's logging pleasure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanvanschenck/yalls.git"
+  },
+  "author": "Jonathan D. B. Van Schenck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonathanvanschenck/yalls/issues"
+  },
+  "homepage": "https://github.com/jonathanvanschenck/yalls#readme"
+}
