@@ -1,19 +1,35 @@
 {
   "name": "yalls",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Yet Another Logging Library Specifically for y'all's logging pleasure",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha",
+    "lint": "npx eslint lib test index.js || true",
+    "lint:fix": "npx eslint --fix lib test index.js || true",
+    "build": "node scripts/build_docs.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonathanvanschenck/yalls.git"
+  },
+  "engines": {
+    "node": ">=16"
   },
   "author": "Jonathan D. B. Van Schenck",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jonathanvanschenck/yalls/issues"
   },
-  "homepage": "https://github.com/jonathanvanschenck/yalls#readme"
+  "homepage": "https://github.com/jonathanvanschenck/yalls#readme",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.20.2",
+    "chai": "^4.3.7",
+    "eslint": "^8.30.0",
+    "eslint-plugin-jsdoc": "^39.6.4",
+    "eslint-plugin-node": "^11.1.0",
+    "jsdoc-to-markdown": "^8.0.0",
+    "mocha": "^10.2.0"
+  }
 }
