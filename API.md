@@ -9,20 +9,8 @@
 ## Functions
 
 <dl>
-<dt><a href="#hex_to_code">hex_to_code(hex)</a> ⇒ <code>string</code></dt>
-<dd><p>Convert hex string to RGB array</p>
-</dd>
 <dt><a href="#f">f(string, [options])</a> ⇒ <code>string</code></dt>
 <dd><p>Format a string with colors and font</p>
-</dd>
-<dt><a href="#join">join(...paths)</a> ⇒ <code>string</code></dt>
-<dd><p>Join paths together.</p>
-</dd>
-<dt><a href="#get">get(obj, path)</a> ⇒ <code>any</code></dt>
-<dd><p>Get a value from an object using a path.</p>
-</dd>
-<dt><a href="#set">set(obj, path, value)</a></dt>
-<dd><p>Set a value in an object using a path.</p>
 </dd>
 </dl>
 
@@ -36,8 +24,8 @@ The y'all's logger class
 * [Logger](#Logger)
     * [new Logger([options])](#new_Logger_new)
     * _instance_
-        * [.colorized](#Logger+colorized) ⇒ <code>boolean</code>
-        * [.log_level](#Logger+log_level) ⇒ <code>string</code>
+        * [.colorized](#Logger+colorized) : <code>boolean</code>
+        * [.log_level](#Logger+log_level) : <code>string</code>
         * [.set_log_level(level)](#Logger+set_log_level)
         * [.debug(string)](#Logger+debug)
         * [.info(string)](#Logger+info)
@@ -66,18 +54,16 @@ Constructor
 
 <a name="Logger+colorized"></a>
 
-### logger.colorized ⇒ <code>boolean</code>
+### logger.colorized : <code>boolean</code>
 Check if the logger is colorized
 
 **Kind**: instance property of [<code>Logger</code>](#Logger)  
-**Returns**: <code>boolean</code> - Whether the logger is colorized  
 <a name="Logger+log_level"></a>
 
-### logger.log\_level ⇒ <code>string</code>
+### logger.log\_level : <code>string</code>
 Get the log level for this logger
 
 **Kind**: instance property of [<code>Logger</code>](#Logger)  
-**Returns**: <code>string</code> - The log level  
 <a name="Logger+set_log_level"></a>
 
 ### logger.set\_log\_level(level)
@@ -184,18 +170,6 @@ The callback function is called with the following arguments:
 | [namespace] | <code>string</code> | <code>&quot;​&quot;</code> | The namespace for the new logger |
 | [opts] | <code>object</code> | <code>{}</code> | any options to pass to the new logger's constructor |
 
-<a name="hex_to_code"></a>
-
-## hex\_to\_code(hex) ⇒ <code>string</code>
-Convert hex string to RGB array
-
-**Kind**: global function  
-**Returns**: <code>string</code> - The RGB terminal color code  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| hex | <code>string</code> | The hex string to convert |
-
 <a name="f"></a>
 
 ## f(string, [options]) ⇒ <code>string</code>
@@ -210,42 +184,4 @@ Format a string with colors and font
 | [options] | <code>object</code> | <code>{}</code> |  |
 | [options.color] | <code>string</code> | <code>&quot;white&quot;</code> | The color to use, name (e.g. 'red') or hex (e.g. '#ff0000') |
 | [options.bold] | <code>boolean</code> | <code>false</code> | Whether to use bold font |
-
-<a name="join"></a>
-
-## join(...paths) ⇒ <code>string</code>
-Join paths together.
-
-**Kind**: global function  
-**Returns**: <code>string</code> - The joined path  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| ...paths | <code>string</code> | The paths to join |
-
-<a name="get"></a>
-
-## get(obj, path) ⇒ <code>any</code>
-Get a value from an object using a path.
-
-**Kind**: global function  
-**Returns**: <code>any</code> - The value at the path, or undefined if the path does not exist  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| obj | <code>object</code> | The object to get the value from |
-| path | <code>string</code> | The path to the value |
-
-<a name="set"></a>
-
-## set(obj, path, value)
-Set a value in an object using a path.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| obj | <code>object</code> | The object to set the value in |
-| path | <code>string</code> | The path to the value |
-| value | <code>any</code> | The value to set |
 
