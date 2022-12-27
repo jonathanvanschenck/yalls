@@ -34,6 +34,7 @@ describe("Formatter", function() {
             expect(f.keys[1]).to.equal("STRING");
             expect(f.template).to.equal(":ISO - this is a test:STRING");
         });
+
     });
     describe("#format()", function() {
         it("Just returns default", function() {
@@ -51,6 +52,12 @@ describe("Formatter", function() {
         it("Add arguments", function() {
             const f = Formatter.from_template(":ISO - Some :STRING text to");
             expect(f.format("test", {ISO:"a"})).to.equal("a - Some test text to");
+        });
+        it("Doesn't leak through unused tags", function() {
+            const f = Formatter.from_template("this is a :STRING test");
+            let result = f.format("", {});
+            expect(result).to.equal("this is a  test");
+
         });
     });
 });
