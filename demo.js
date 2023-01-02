@@ -1,25 +1,5 @@
-# Y'all's Logging Library
-Yet another logging library specifically for y'all's logging pleasure.
 
-A no-nonsense, low-dependancy, simple logging tool. Your main features are:
- - Hierarchical namespacing: easily create child loggers namespaced under a parent to keep your complicated architecture's log messages organized
- - Format-able print, with sensible defaults
- - Configurable logging outputs: want standard out, a callback for remote logging, or maybe a no-op so you can integrate with a testing suite? You get it all for free!
-
-## Installation
-```bash
-npm install yalls
-```
-
-## Usage
-Check out the [full API](./API.md) for more details, or run the demo script:
-```bash
-node demo.js
-```
-
-Here's a short example too:
-```js
-const { Logger } = require("yalls");
+const { Logger } = require("./index.js");
 
 // Create a parent logger
 const parent = Logger.console("parent");
@@ -56,4 +36,3 @@ const no_header = Logger.console("no_header", { format:null });
 // But what if I hate beautiful colors?
 const eye_pain = Logger.console("eye_pain", { no_colors:true });
 eye_pain.warn("IT BURNS!");
-```

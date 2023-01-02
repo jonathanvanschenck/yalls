@@ -1,19 +1,3 @@
-## Classes
-
-<dl>
-<dt><a href="#Logger">Logger</a></dt>
-<dd><p>The y&#39;all&#39;s logger class</p>
-</dd>
-</dl>
-
-## Functions
-
-<dl>
-<dt><a href="#f">f(string, [options])</a> ⇒ <code>string</code></dt>
-<dd><p>Format a string with colors and font</p>
-</dd>
-</dl>
-
 <a name="Logger"></a>
 
 ## Logger
@@ -169,19 +153,4 @@ The callback function is called with the following arguments:
 | cb | <code>function</code> |  | The callback function |
 | [namespace] | <code>string</code> | <code>&quot;​&quot;</code> | The namespace for the new logger |
 | [opts] | <code>object</code> | <code>{}</code> | any options to pass to the new logger's constructor |
-
-<a name="f"></a>
-
-## f(string, [options]) ⇒ <code>string</code>
-Format a string with colors and font
-
-**Kind**: global function  
-**Returns**: <code>string</code> - The formatted string  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| string | <code>string</code> |  | The string to format |
-| [options] | <code>object</code> | <code>{}</code> |  |
-| [options.color] | <code>string</code> | <code>&quot;white&quot;</code> | The color to use, name (e.g. 'red') or hex (e.g. '#ff0000') |
-| [options.bold] | <code>boolean</code> | <code>false</code> | Whether to use bold font |
 
