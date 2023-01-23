@@ -6,6 +6,7 @@ const parent = Logger.console("parent");
 
 parent.info("Some info");
 parent.error("An error!");
+parent.info("Some", "delimited", "info");
 
 // Change the log level
 parent.set_log_level("warn");
