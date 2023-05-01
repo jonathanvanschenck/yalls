@@ -37,3 +37,9 @@ const no_header = Logger.console("no_header", { format:null });
 // But what if I hate beautiful colors?
 const eye_pain = Logger.console("eye_pain", { no_colors:true });
 eye_pain.warn("IT BURNS!");
+
+
+// Log into a file
+const file = Logger.append_file("test.log", "A");
+file.info("This is in a file");
+file.warn("AND SO IS THIS");
