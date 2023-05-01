@@ -1,6 +1,6 @@
 {
   "name": "yalls",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Yet Another Logging Library Specifically for y'all's logging pleasure",
   "main": "index.js",
   "scripts": {
