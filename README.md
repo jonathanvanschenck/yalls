@@ -48,6 +48,8 @@ child.info("But now I am!");
 
 
 // Change the logging format
+const only_time = Logger.console("no_stamp", { format:"[:LTIME] :TYPE - :NAMESPACE | :STRING" });
+only_time.info("Only the time!");
 const no_timestamp = Logger.console("no_stamp", { format:":TYPE - :NAMESPACE | :STRING" });
 no_timestamp.info("Simplified!");
 
