@@ -14,7 +14,7 @@
     "url": "git+https://github.com/jonathanvanschenck/yalls.git"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=12"
   },
   "author": "Jonathan D. B. Van Schenck",
   "license": "MIT",
@@ -33,6 +33,6 @@
     "mocha": "^10.2.0"
   },
   "dependencies": {
-    "yaclc": "^1.0.0"
+    "yaclc": "^1.1.0"
   }
 }
